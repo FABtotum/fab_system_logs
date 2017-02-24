@@ -1,0 +1,20 @@
+{
+    "description": "Retrieve all systems logs", 
+    "hooks": [], 
+    "required_bundles": [], 
+    "icon": "", 
+    "author_uri": "km@fabtotum.com", 
+    "name": "System logs", 
+    "author": "Krios Mane - FABteam", 
+    "menu": {
+        "/my_new_plugin": {
+            "url": "plugin/fab_system_logs", 
+            "title": "System logs", 
+            "icon": "fa-cube"
+        }
+    }, 
+    "plugin_uri": "https://github.com/FABtotum/fab_system_logs", 
+    "version": "0.10.0", 
+    "plugin_slug": "fab_system_logs", 
+    "filetypes": []
+}

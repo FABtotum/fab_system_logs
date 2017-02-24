@@ -10,7 +10,7 @@
         "/my_new_plugin": {
             "url": "plugin/fab_system_logs", 
             "title": "System logs", 
-            "icon": "fa-cube"
+            "icon": "fa-file-o"
         }
     }, 
     "plugin_uri": "https://github.com/FABtotum/fab_system_logs", 

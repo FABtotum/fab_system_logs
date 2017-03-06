@@ -5,7 +5,7 @@
     "icon": "", 
     "author_uri": "km@fabtotum.com", 
     "name": "System logs", 
-    "author": "Krios Mane - FABteam", 
+    "author": "FABteam", 
     "menu": {
         "/my_new_plugin": {
             "url": "plugin/fab_system_logs", 

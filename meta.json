@@ -14,7 +14,7 @@
         }
     }, 
     "plugin_uri": "https://github.com/FABtotum/fab_system_logs", 
-    "version": "0.10.0", 
+    "version": "0.10.1", 
     "plugin_slug": "fab_system_logs", 
     "filetypes": []
 }

@@ -15,19 +15,16 @@ class Plugin_fab_system_logs extends FAB_Controller {
 	{
 		parent::__construct();
 		if(!$this->input->is_cli_request()){ //avoid this form command line
-			//check if there's a running task
-			//load libraries, models, helpers
-			$this->load->model('Tasks', 'tasks');
-			$this->runningTask = $this->tasks->getRunning();
 		}
 	}
 
 	public function index()
 	{
 		$this->load->library('smart');
-		$this->load->helper('form');
-		$this->load->helper('fabtotum_helper');
-		$this->load->helper('plugin_helper');
+		$this->load->helper(array('form', 'fabtotum_helper', 'plugin_helper'));
+		
+		//load plugin translation
+		loadPluginTranslation('fab_system_logs', 'fab_system_logs');
 		
 		$data = array();
 		
@@ -39,8 +36,8 @@ class Plugin_fab_system_logs extends FAB_Controller {
 		$widgeFooterButtons = '';
 
 		$widget         = $this->smart->create_widget($widgetOptions);
-		$widget->id     = 'main-widget-head-installation';
-		$widget->header = array('icon' => 'fa-files-o', "title" => "<h2>System logs</h2>");
+		$widget->id     = 'main-widget-system-logs';
+		$widget->header = array('icon' => 'fa-files-o', "title" => "<h2>".dgettext("fab_system_logs", "System logs")."</h2>");
 		$widget->body   = array('content' => $this->load->view(plugin_url('main_widget'), $data, true ), 'class'=>'');
 
 		$this->addJsInLine($this->load->view(plugin_url('js'), $data, true));

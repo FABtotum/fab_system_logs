@@ -10,11 +10,11 @@
         "/my_new_plugin": {
             "url": "plugin/fab_system_logs", 
             "title": "System logs", 
-            "icon": "fa-file-o"
+            "icon": "fa-files-o"
         }
     }, 
     "plugin_uri": "https://github.com/FABtotum/fab_system_logs", 
-    "version": "1.0.0", 
+    "version": "1.0.1", 
     "plugin_slug": "fab_system_logs", 
     "filetypes": []
 }
